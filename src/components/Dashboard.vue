@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import logo from "../assets/HydroSmart.png"
 
 const props = defineProps({
   title: {
@@ -59,9 +60,7 @@ const navigation = [
         <!-- HydroSmart Brand Logo -->
         <div class="flex items-center space-x-2.5 px-2 py-3 mb-6">
           <div class="w-9 h-9 rounded-full bg-[#136148] flex items-center justify-center p-1.5">
-            <svg class="w-full h-full text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m-4-8c0 4.418 3.582 8 8 8m-8-8a8 8 0 008 8" />
-            </svg>
+              <img :src="logo" /> 
           </div>
           <span class="font-bold text-lg tracking-tight text-white">HydroSmart</span>
         </div>
